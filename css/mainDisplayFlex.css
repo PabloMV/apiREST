@@ -1,0 +1,848 @@
+h1, h2 {
+    font-family: 'Orbitron';
+    text-decoration: underline;
+    margin: 0 0 .5em 0;
+}
+h3 {
+    font-family: 'Orbitron';
+}
+
+html{
+    font-family: arial; 
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+body{
+    display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+    -webkit-flex-flex-flow: column;
+    flex-flow: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+/***************login page******************************/
+
+#login, #newUser {
+    margin: 0 auto;
+}
+#wrapInput{
+    display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+    flex-direction: column;
+}
+
+#wrapInput p{  
+    margin: 0;
+}
+
+#accessControll {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/loginBG.jpg);
+    background-size: cover;
+    display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+    -webkit-flex-flex-flow: column;
+    flex-direction: column;
+    overflow-y: auto;
+    position: fixed;
+}
+#accessControll input {
+    background: rgba(255, 255, 255, 0.3);
+    width: 280px;
+    margin: .5em 0;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+#wrapInput button, #wrapInput button:focus {
+    outline: none;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 2em;
+    font-family: 'Orbitron';
+    background: #fff;
+}
+#acType {
+    margin: 3em auto 2.5em auto;
+}
+#wrapSel {
+    display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+    justify-content: space-around;
+    margin: 1em 0;
+}
+#wrapSel a{
+    font-family: 'Orbitron';
+    width: 50%;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px 0 20px 0;
+    transition: all .5s ease;
+}
+#wrapSel a:hover, #wrapSel .active{
+    font-family: 'Orbitron';
+    font-style: italic;
+    width: 50%;
+    background: #fff;
+    text-align: center;
+    color: #000;
+    border-radius:0 20px 0 20px;
+    outline: none;
+}
+#newUser, #login {
+    display: none;
+}
+/***************end login page******************************/
+h1{
+    font-size: 2em;
+}
+#logo {    
+    font-size: 6em;
+    text-align: center;
+    display: block;
+    line-height: 1.2;
+    position: absolute;
+    width: auto;
+    align-self: center;
+    height: auto;
+    -webkit-flex-flex:0;
+    flex: 0;
+   
+    font-family: 'Orbitron', cursive;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#logoBg {
+    position: relative;
+    margin: 0 auto;
+    width: 60%;
+    display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+    justify-content: center;
+    -webkit-flex-flex: 1 1 60%;
+    flex: 1 1 60%;
+}
+#logoBg > img {
+    height: 80px;
+    margin: auto;
+}
+
+
+header {
+      height: 170px;
+      -webkit-flex-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+      width: 100%;
+      -webkit-flex-flex:1 1 60%;
+      flex: 1 0 170px;
+      display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+      position: relative;
+      background: -webkit-linear-gradient(#414ef1, #ffffff);
+      background: -moz-linear-gradient(#414ef1, #ffffff);
+      background: -o-linear-gradient(#414ef1, #ffffff);
+      background: linear-gradient(#414ef1, #ffffff);
+      transition: filter .5s ease;
+       
+    }
+    
+.mainMenu {
+        display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+        width: auto;
+        max-height: 30px;
+        background: #fb5555 none repeat scroll 0 0;
+        border: 1px solid #0f0f0f;
+        -webkit-flex-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+        -webkit-flex-flex:0 0 58%;
+        flex: 0 0 58%;
+        position: relative;
+        align-self: center;
+        justify-content: center;
+        z-index: 10;
+        
+
+    }   
+.menuList {         
+       height: 100%;
+       display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+       -webkit-flex-flex-flow: row;
+       flex-flow: row;
+       align-self: center;
+    }
+
+.menuItem {
+    display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+    height: 100%;
+    list-style: outside none none;
+    -webkit-flex-flex:0 250px;
+    flex: 0 250px;
+    padding: 0.333em 15px;
+}
+
+.menuItem a {
+    cursor: pointer;
+    display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+    text-align: center;
+    line-height: 1;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    padding: .01em 0;
+    align-items: center;
+    -webkit-flex-flex: 1 1 100%;
+    flex: 1 1 100%;
+}
+
+.menuItem:hover{
+    background: rgba(255,255,255,0.6);
+    transition: 0.5s;
+}
+section {
+    position: relative;
+    height: 100%;
+    padding-top: 2%;
+    -webkit-flex-flex: 1 auto;
+    flex: 1 auto;
+   
+    width: 100%;
+    display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+    transition: filter .5s ease;
+}
+section h1{
+    margin: 0 auto;
+    margin: .5em 0;
+}
+section > center{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    margin: 0px auto;
+}
+.active{
+    background: #fff;
+    outline: 1px solid;    
+}
+button#ativarModuloTeste {
+    width: 8em;
+    height: 2em;
+    margin: 1%;
+    font-size: 1em;
+}  
+
+i.material-icons {
+    font-size: 10em;
+} 
+
+i.material-icons.cel, i.material-icons.laptop, i.material-icons.tablet {
+    font-size: 5em;
+    margin: 0.5em 0;
+}
+
+#linha {
+    width: 100%;
+    -webkit-flex-flex:1;
+    flex:1;
+    
+    display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;   
+    -webkit-flex-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+
+#box-1, .box-1 {
+    -webkit-flex-flex:1 33.333%;
+    flex:1 33.333%;
+    
+    min-width: 250px;
+    text-align: center;
+}
+
+footer {
+    transition: filter .5s ease;
+    height: 10em;
+    background: #000;
+    position: relative;
+    margin-top: 2em;
+    width: 100%;
+    border-top: 10px solid gray;
+    display: table;
+    transition: filter .5s ease;
+}
+
+span#rights {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 13px;
+}
+ 
+.mainMenu .mobMenuBtnOpen.material-icons, .mainMenu .mobMenuBtnClose.material-icons{
+    display: none;
+    z-index: 10;
+}
+
+.floatMenu{
+    position: fixed;
+    top: 0;
+}
+#box-3{
+    width: 100%;
+    display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+    -webkit-flex-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+/***********HOME***********************/
+p {
+    margin: 1em auto;
+}
+#box-3 h2{
+    width: 100%;
+    margin: .5rem;
+    /* max-height: 1.6rem; */
+}
+
+#boxImgs ul {
+    display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+    -webkit-flex-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    justify-content: center;
+    min-width: 300px;
+}
+#boxImgs img {
+    width: 6.666em;
+    margin: auto 0;
+    display: inline-block;
+    list-style: none;
+}
+#boxImgs li {
+    list-style: none;
+    height: 6.666em;
+    display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+    border: 3px solid #d41495;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+#principal {
+    width: 60%;
+    display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+    -webkit-flex-flex: 1 1 60%;
+    flex: 1 1 60%;
+    -webkit-flex-flex-flow: column;
+    flex-flow: column;
+}
+#boxImgs{
+    display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+    width: 40%;
+    padding: 0 1%;
+    -webkit-flex-flex-flow: column;
+    flex-flow: column;
+    min-width: 300px;
+    -webkit-flex-flex: 1 1 40%;
+    flex: 1 1 40%;
+}
+#wrapImg img {
+    width: 95%;
+    position: relative;
+     -webkit-flex-flex: 0 1 auto;
+    flex: 0 1 auto;
+    margin: auto 0;
+    border: 3px solid #805edc;
+}
+#wrapImg {
+    -webkit-flex-flex: 0 1 auto;
+    flex: 0 1 auto;
+    min-width: 250px;
+    display: block;
+    position: relative;
+    justify-content: center;
+}
+#wrapText {
+    position: relative;
+}
+div#loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 2;
+    display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+}
+span#spin {
+    width: 2em;
+    height: 2em;
+    background: #000;
+    margin: auto;
+    position: relative;
+    display: block;
+    border-left:3px solid #212020;
+    border-right: 3px solid #212020;
+    border-top: 3px solid #afafaf;
+    border-bottom: 3px solid #afafaf;
+    border-radius: 30pc;
+    animation: loading .5s infinite linear;
+}
+@keyframes loading {
+    from {-webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    }
+    to 
+    {-webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    }
+
+}
+
+#otherInfo {
+    width: 100%;
+}
+#destaques h2:first-Child {
+    margin: 0;
+}
+
+/******************SOBRE*************************/
+#sobre img {
+    float: left;
+    color: #e446b5;
+    width: 250px;
+    height: 250px;
+    margin: 2%;
+    border: 2px solid;
+    border-radius: 300px;
+}
+
+/****************contato******************/
+
+#ContactModal, #ContactModal * {
+    display: block !important;
+    position: relative !important;
+    box-shadow: none !important;
+}
+
+#ContactModal {
+    background: none !important;
+    
+}
+
+#ContactModal #dataClient{
+    margin: 0 auto !important;
+}
+#ContactModal .close {
+    display: none !important;
+}
+
+
+@media screen and (max-width:770px){
+    
+    #logoBg img {
+        height: 70px;
+        margin: auto;
+    }
+    .active{   
+            background: transparent;
+            outline: none;
+            border: 0;
+        }
+    #sobre div div {
+        text-align: -webkit-center;
+        display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+        -webkit-flex-flex-flow: column;
+        flex-flow: column;
+    }
+    .mainMenu {
+            display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+            width: 50px;
+            height: 45px;
+            max-height: 58px;
+            border: 1px solid #0f0f0f;
+            -webkit-flex-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+            -webkit-flex-flex: 0 0 58%;
+            flex: 0 0 58%;
+            align-self: flex-end;
+            position: fixed;
+            justify-content: center;
+            top: 1%;
+            right: 1%;
+    }   
+    .mainMenu .material-icons.mobMenuBtnOpen{
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        display: block;
+        font-size: 3em !important;
+        
+        z-index: 2 ;
+        -webkit-transition: transform 0.3s ease;
+        -moz-transition: transform 0.3s ease;
+        transition: transform 0.3s ease;
+    }
+    
+
+     .mainMenu .material-icons.mobMenuBtnClose{
+        width: inherit;
+        height: inherit;
+        position: relative;
+        display: none;
+        font-size: 3em !important;
+       
+        z-index: 2;
+        -webkit-transition: transform 0.3s ease;
+        -moz-transition: transform 0.3s ease;
+        transition: transform 0.3s ease;
+        -webkit-transform: scaleY(0);
+        -moz-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+        -o-transform: scaleY(0);
+        transform: scaleY(0);
+    }
+
+    .menuList {         
+        height: 100%;
+        display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+        -webkit-flex-flex-flow: column;
+        flex-flow: column;
+        align-self: center;
+        visibility: hidden;
+        position: fixed;
+        width: 100%;
+        background: rgba(128,94,220,0.6);
+        top: 0;
+        right: 0;
+    }
+
+    .menuItem {
+        display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+        height: 100%;
+        list-style: outside none none;
+        -webkit-flex-flex:1 250px;
+        flex:1 250px;
+        padding: 0px 15px;
+    }
+
+    .menuItem a {
+        cursor: pointer;
+        display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+        text-align: center;
+        line-height: 1;
+        font-weight: bold;
+        text-decoration: none;
+        color: #000;
+        padding: 19px 0;
+        align-items: center;
+        -webkit-flex-flex: 1 1 100%;
+        flex: 1 1 100%;
+        justify-content: center;
+        font-size: 2em;
+    }
+
+    .menuItem:hover{
+        background: rgba(255,255,255,0.6);
+        transition:background 0.5s;
+    }
+    a[href="#"] {
+        text-decoration: none;
+        color: #000;
+    }
+    #principal {
+        width: 100%;
+    }
+    #wrapImg img{
+        margin-top: auto;
+        margin-bottom: 0;
+    }
+   
+    
+}   
+@media screen and (max-width:400px){   
+   #logoBg img {
+        height: 60px;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+body{
+    display: -webkit-flex;  display: -moz-box; display: -ms-flexbox;  display: -webkit-flex;  display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+}
+#logo {    
+    font-size: 6em;
+    text-align: center;
+    display: block;
+    line-height: 1;
+    width: auto;
+    align-self: center;
+    height: 100%;
+    -webkit-flex-flex: 0;
+    flex: 0;
+    font-family: 'Pacifico', cursive;
+}
+span.evinha {
+    margin-left: -15%;
+}
+span.mantas {
+    margin-left: 10%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+        height: 250px;
+        flex-flow: column nowrap;
+        width: 100%;
+        -webkit-flex-flex: 1 0 250px;
+        flex: 1 0 250px;
+        display: -webkit-flex;   display: -moz-box;        display: -ms-flexbox;   display: -webkit-flex;  display: flex;
+        position: relative;
+       background:  #d41495;
+       background: -webkit-linear-gradient(#d41495, #ffffff);
+       background: -moz-linear-gradient(#d41495, #ffffff);
+       background: -o-linear-gradient(#d41495, #ffffff);
+       background: linear-gradient(#d41495, #ffffff);
+       
+    }
+    
+.mainMenu {
+        display: -webkit-flex; display: -moz-box;   display: -ms-flexbox;   display: -webkit-flex;  display: flex;
+        width: 100%;
+        max-height: 58px;
+        background: #805edc none repeat scroll 0 0;
+        border-top: 1px solid #0f0f0f;
+        border-bottom: 1px solid #0f0f0f;
+        flex-flow: column nowrap;
+        -webkit-flex-flex: 0 0 58%;
+        flex: 0 0 58%;
+        align-self: flex-end;
+        position: relative;
+        justify-content: center;
+    }   
+.menuList {         
+       height: 100%;
+       display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: -webkit-flex;  display: flex;
+       flex-flow: row;
+       align-self: center;
+    }
+
+.menuItem {
+    display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+    height: 100%;
+    list-style: outside none none;
+    -webkit-flex-flex: 0 250px;
+    flex:0 250px;
+    padding: 0px 15px;
+}
+
+.menuItem a {
+    cursor: pointer;
+    display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+    text-align: center;
+    line-height: 1;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    padding: 19px 0;
+    -webkit-flex-flex: 1 1 100%;
+    flex: 1 1 100%;
+}
+
+.menuItem:hover{
+    background: rgba(255,255,255,0.6);
+    transition: 0.5s;
+}
+section {
+    position: relative;
+    height: 100%;
+    padding-top: 2%;
+    -webkit-flex-flex: 1 auto;
+    flex: 1 auto;
+    width: 100%;
+    display: table;
+}
+section h1{
+    margin: 0 auto;
+}
+.active{
+    background: #fff;
+    outline: 1px solid;    
+}
+button#ativarModuloTeste {
+    width: 8em;
+    height: 2em;
+    margin: 1%;
+    font-size: 1em;
+}  
+
+i.material-icons {
+    font-size: 10em;
+} 
+
+i.material-icons.cel, i.material-icons.laptop, i.material-icons.tablet {
+    font-size: 5em;
+    margin: 0.5em 0;
+}
+
+#linha {
+    width: 90%;
+    display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;   
+    -webkit-flex-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+
+#box-1, .box-1 {
+    -webkit-flex-flex:1 33.333%;
+    flex:1 33.333%;
+    min-width: 300px;
+}
+
+footer {
+    height: 10em;
+    background: #000;
+    position: relative;
+    margin-top: 2em;
+    width: 100%;
+    border-top: 10px solid gray;
+    display: table;
+}
+
+span#rights {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 13px;
+}
+
+.mobMenuBtnOpen{
+    display: none !important;
+}
+
+@media screen and (max-width:770px){
+
+.mainMenu {
+    display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+    width: 66px;
+    height: 100%;
+    background: #805edc none repeat scroll 0 0;
+    border: 1px solid #0f0f0f;
+    -webkit-flex-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-flex-flex:0 0 58%;
+    flex: 0 0 58%;
+    align-self: flex-end;
+    position: fixed;
+    justify-content: center;
+    top: 33%;
+    top: 5%;
+    right: 1%;
+}   
+.mobMenuBtnOpen{
+   width: inherit;
+    height: inherit;
+    position: relative;
+    display: block !important;
+    font-size: 3.5em !important;
+    text-align: center;
+}
+
+
+.menuList {         
+       height: 100%;
+       display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+       -webkit-flex-flex-flow: column;
+       flex-flow: column;
+       align-self: center;
+       visibility: hidden;
+       position: absolute;
+       width: 100%;
+    }
+
+.menuItem {
+    display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+    height: 100%;
+    list-style: outside none none;
+    -webkit-flex-flex:0 250px;
+    flex:0 250px;
+    padding: 0px 15px;
+}
+
+.menuItem a {
+    cursor: pointer;
+    display: -webkit-flex;         display: -moz-box;            display: -ms-flexbox;         display: -webkit-flex;  display: flex;
+    text-align: center;
+    line-height: 1;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    padding: 19px 0;
+    -webkit-flex-flex: 1 1 100%;
+    flex: 1 1 100%;
+}
+
+.menuItem:hover{
+    background: rgba(255,255,255,0.6);
+    transition: 0.5s;
+}
+}*/

@@ -1,0 +1,26 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://www.vianweb.com.br/?page=home</loc>
+<priority>0.5</priority>
+<lastmod>2017-12-13</lastmod>
+<changefreq>monthly</changefreq>
+</url>
+<url>
+<loc>http://www.vianweb.com.br/?page=contato</loc>
+<priority>0.5</priority>
+<lastmod>2017-12-13</lastmod>
+<changefreq>monthly</changefreq>
+</url>
+<url>
+<loc>http://www.vianweb.com.br/?page=servicos</loc>
+<priority>0.5</priority>
+<lastmod>2017-12-13</lastmod>
+<changefreq>monthly</changefreq>
+</url>
+<url>
+<loc>http://www.vianweb.com.br/?page=curriculo</loc>
+<priority>0.5</priority>
+<lastmod>2017-12-13</lastmod>
+<changefreq>monthly</changefreq>
+</url>
+</urlset>

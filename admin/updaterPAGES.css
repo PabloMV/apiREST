@@ -1,0 +1,213 @@
+*, fieldset > textarea{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#admControll {
+    width: 100%;
+    height: 20px;
+    background: -webkit-linear-gradient(#aeb1ce, #cec7c7);
+    background: -moz-linear-gradient(#aeb1ce, #cec7c7);
+    background: -o-linear-gradient(#aeb1ce, #cec7c7);
+    background: linear-gradient(#aeb1ce, #cec7c7);
+    border: 1px solid;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex; 
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex; 
+    display: flex;
+    -webkit-box-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 33;
+    font-weight: bold;
+}
+#userLoged{
+   
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex; 
+    display: flex;
+    width: 90px;
+    justify-content: space-between;
+}
+i#on {
+    width: 17px;
+    height: 17px;
+    border: 2px solid;
+    border-radius: 40px;
+    background: lawngreen;
+}
+i#off {
+    width: 17px;
+    height: 17px;
+    border: 2px solid;
+    border-radius: 40px;
+    background: #ff1e1e;
+}
+#cmsPanel {
+    height: 500px;
+    width: 100%;
+    -webkit-box-flex:1 1 500px;
+    flex: 1 1 500px;    
+    position: relative;
+}
+
+#cmsPanel h1 {
+    background: #191818;
+    color: #ffffff;
+    padding: .5em 0;
+    margin: 0 .2em;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    font-style: italic,underline;
+}
+#cmsPanel #box-1 {
+    background: #c51010;
+    border-radius: 5px;
+    -webkit-box-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex; 
+    display: flex;
+    border: .5px solid #191818;
+}
+#cmsPanel #options {
+    height: 100%;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex-flow: column;
+    flex-flow: column;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+#options li {
+    color: #000;
+    text-shadow: 1px 1px 1px;
+}
+#options li h2 {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 5px 5px 1px #000;
+}
+fieldset {
+   
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex; 
+    display: flex;
+    text-align: center;
+    -webkit-box-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+}
+#confirm {
+    position: absolute;
+    top: 0;
+    right: 1%;
+    cursor: pointer;
+    font-family: 'arial';
+    box-shadow: 0px 0px 10px 6px;
+    background: #02ff02;
+    font-size: 17px;
+    font-weight: bold;
+    width: 30px;
+    border-radius: 40px;
+    height: 30px;
+    line-height: 1.8888;
+
+}
+.editing {
+    position: relative;
+    transition: all .5s ease;
+    background: #ff1e1e;
+    border: 2px solid;
+}
+.editing:before {
+    content: 'Editando';
+    position: absolute;
+    left: 1%;
+    font-family: 'Arial';
+    font-size: 25px;
+    font-weight: bold;
+}
+.edited:hover{
+    background:#efef0a; 
+}
+.edited {
+    position: relative;
+}
+p.edited > i {
+    font-size: 2em !important;
+}
+.material-icons.careful {
+    font-size: 27px;
+    position: absolute;
+    left: 130px;
+}
+.edited i {
+    position: absolute;
+    font-size: 1em !important;
+    top: 0;
+    color: rgba(255,255,255,0.5);
+    z-index: 1;
+    opacity: 0.7;
+    margin: .1em 0;
+    height: 90%;
+    display: block;
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+}
+.edited .left {
+    left: 0;
+}
+.edited .right {
+    right: 0;
+}
+
+
+#editTxtControll {
+    width: 100%;
+    position: relative;
+    -webkit-transition: transform .2s ease;
+    -moz-transition: transform .2s ease;
+    -ms-transition: transform .2s ease;
+    -o-transition: transform .2s ease;
+    transition: transform .2s ease;
+}
+textarea {
+    box-shadow: 0px 0px 5px 3px;
+    text-align: center;
+    margin: 3em auto;
+    overflow: hidden;
+}
+
+section h1, section h2, section p{
+    cursor: pointer;
+     -webkit-transition: background .5s ease;
+    -moz-transition: background .5s ease;
+    -ms-transition: background .5s ease;
+    -o-transition: background .5s ease;
+    transition: background .5s ease;
+}
+section h1:hover, section h2:hover, section p:hover{
+    
+    -webkit-transition: background .5s ease;
+    -moz-transition: background .5s ease;
+    -ms-transition: background .5s ease;
+    -o-transition: background .5s ease;
+    transition: background .5s ease;
+    
+}

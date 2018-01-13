@@ -1,0 +1,53 @@
+<!DOCTYPE=html>
+<html lang="pt-br">
+<head>
+    <title>Code UPdater</title>
+    <link rel="stylesheet" href="updaterPAGES.css">
+    <link rel="stylesheet" href="../css/main.css"/>
+     <link rel="icon" type="image/png" href="../favicon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:500,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.ckeditor.com/4.7.0/standard/ckeditor.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <div id="accessControll">
+        <div id="acType">
+            <img src="../img/logo.png" alt="">
+            <div id="wrapSel">
+                <a href="log" class="login" href="">Login</a>
+                <a href="reg" class="register">Cadastrar</a>
+            </div>
+        </div>
+        <div id="login">
+            <div id="wrapInput">
+                <h2>Faça seu login:</h2>
+                <h3>Nome:</h3>
+                <input id="logName" value="email" type="text">
+                <h3>Senha:</h3>
+                <input id="logPass" value="logPass" type="password">                
+                <input type="hidden" class="requestType" name="requestType" value="login">
+                <button id="loginSubmit">OK</button>
+            </div>
+        </div>
+        <div id="newUser">
+            <div id="wrapInput">
+                <h2>Faça seu cadastro:</h2>
+                <h3>Nome:</h3>
+                <input id="regName" name="regName"  value="" type="text">
+                <h3>Email:</h3><p>(insira um email válido)</p>
+                <input id="regEmail" name="regEmail" value="" type="text">
+                <h3>Senha:</h3><p>(máximo 9 caractéres)</p>
+                <input id="regPass" name="regPass" value="" type="password">
+                <h3>Confirmar Senha:</h3><p>(iguál a senha)</p>
+                <input id="confPass" name="confPass" value="" type="password">
+                <input type="hidden" class="requestType2" name="requestType" value="register">
+                <button id="regSubmit" disabled >Registrar</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="updaterPAGES.js"></script>
+</html>
